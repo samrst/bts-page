@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="description" content="Fanpage dedicada ao BTS - Bangtan Boys"/>
+  <meta name="theme-color" content="#0A0A0F"/>
+  <title>Contato — BTS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="IMG/icon-bts.png">
+  <link rel="stylesheet" href="CSS/style.css"/>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="navbar-brand"><img src="IMG/nome-bts.png" width="60px" alt=""><img src="IMG/logo-bts.png" width="30px"></a>
+    <button class="navbar-toggler d-md-none" id="nav-toggle">☰</button>
+    <ul class="nav-tabs-custom d-none d-md-flex" id="nav-desktop">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="eras.html" class="nav-link">Eras</a></li>
+      <li><a href="cadastro.html" class="nav-link">Cadastro</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre Mim</a></li>
+      <li><a href="contato.html" class="nav-link active">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── MAIN ── -->
+<main id="page-contato" class="page" style="background:var(--bg2)">
+  <div class="container" style="padding-top:clamp(2rem,5vw,3rem); padding-bottom:clamp(2rem,5vw,3rem)">
+
+    <!-- HEADER -->
+    <div class="reveal">
+      <p class="sec-label">Contato</p>
+      <h2 class="sec-title">Envie sua Mensagem</h2>
+      <div class="hairline"></div>
+    </div>
+
+    <!-- FORM SECTION -->
+    <div class="form-section reveal">
+      <!-- 
+        INTEGRAÇÃO COM FORMSPREE:
+      -->
+      <form action="https://formspree.io/f/mkolbjyq" method="POST" id="form-contato">
+        <div class="row g-3">
+          <!-- Nome -->
+          <div class="col-12">
+            <label class="form-label">Nome Completo</label>
+            <input type="text" name="nome" id="inp-nome" class="form-control" placeholder="Digite seu nome..." required/>
+          </div>
+          
+          <!-- E-mail -->
+          <div class="col-12">
+            <label class="form-label">E-mail</label>
+            <input type="email" name="email" id="inp-email" class="form-control" placeholder="exemplo@email.com" required/>
+          </div>
+          
+          <!-- Mensagem -->
+          <div class="col-12">
+            <label class="form-label">Mensagem</label>
+            <textarea name="mensagem" id="inp-mensagem" class="form-control" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+          
+          <!-- Botão Enviar -->
+          <div class="col-12">
+            <button type="submit" class="btn-add" id="btn-enviar">＋ Enviar Mensagem</button>
+          </div>
+        </div>
+      </form>
+      <div id="status-msg" style="margin-top: 1rem; text-align: center; display: none;"></div>
+    </div>
+
+  </div>
+
+<footer>
+  <div class="footer-brand"><img src="IMG/nome-bts.png" width="60px" alt=""><img src="IMG/logo-bts.png" width="30px"></div>
+  <p style="font-size:clamp(0.6rem,1.2vw,0.72rem);color:var(--muted);letter-spacing:.18em;text-transform:uppercase">Bangtan Boys · 방탄소년단</p>
+  <p style="font-size:clamp(0.6rem,1.2vw,0.72rem);color:var(--muted);margin-top:.4rem">Feito por <strong style="color:var(--purple-l)">Sam Rodrigues</strong></p>
+  <p class="footer-note">Página de fã • Não afiliada à HYBE ou Big Hit Music</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="JS/script.js"></script>
+
+</body>
+</html>

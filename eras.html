@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="description" content="História e Eras do BTS - Bangtan Boys"/>
+  <meta name="theme-color" content="#0A0A0F"/>
+  <title>Eras — BTS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="IMG/icon-bts.png"> 
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="navbar-brand"><img src="IMG/nome-bts.png" width="60px" alt=""><img src="IMG/logo-bts.png" width="30px"></a>
+    <button class="navbar-toggler d-md-none" id="nav-toggle">☰</button>
+    <ul class="nav-tabs-custom d-none d-md-flex" id="nav-desktop">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="eras.html" class="nav-link active">Eras</a></li>
+      <li><a href="cadastro.html" class="nav-link">Cadastro</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre Mim</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     PAGE: ERAS
+══════════════════════════════════════ -->
+<main id="page-eras" class="page">
+  <div class="container" style="padding-top:clamp(2rem,5vw,3rem);padding-bottom:clamp(2rem,5vw,4rem)">
+
+    <div class="reveal">
+      <p class="sec-label">História</p>
+      <h2 class="sec-title">Eras do BTS</h2>
+      <div class="hairline"></div>
+      <p style="font-size:clamp(0.8rem,1.5vw,0.88rem);color:var(--muted);margin-bottom:clamp(1.5rem,3vw,2rem);max-width:560px">
+        Cada era marca uma fase criativa e visual distinta do grupo — da estreia crua em 2013 até o comeback que parou o mundo em 2026<br>(Futuramente adição das era solo).
+      </p>
+    </div>
+
+    <!-- filtros -->
+    <div class="era-filters reveal">
+      <button class="era-pill active" data-filter="all">Todas</button>
+      <button class="era-pill" data-filter="album">Álbum</button>
+      <button class="era-pill" data-filter="mini">Mini Álbum</button>
+      <button class="era-pill" data-filter="single">Single / EP</button>
+      <button class="era-pill" data-filter="2013">2013</button>
+      <button class="era-pill" data-filter="2014">2014</button>
+      <button class="era-pill" data-filter="2015">2015</button>
+      <button class="era-pill" data-filter="2016">2016</button>
+      <button class="era-pill" data-filter="2017">2017</button>
+      <button class="era-pill" data-filter="2018">2018</button>
+      <button class="era-pill" data-filter="2019">2019</button>
+      <button class="era-pill" data-filter="2020">2020</button>
+      <button class="era-pill" data-filter="2021">2021</button>
+      <button class="era-pill" data-filter="2022">2022</button>
+      <button class="era-pill" data-filter="2026">2026</button>
+    </div>
+
+    <!-- timeline -->
+    <div class="era-timeline" id="era-timeline">
+
+      <!-- 2013 -->
+      <div class="era-item reveal" data-type="mini" data-year="2013">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#1a1a0a,#4a3800)">
+            <img class="era-cover-img" src="IMG/eras/2cool4skool.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag">Junho 2013</div>
+            <div class="era-name">2 Cool 4 Skool</div>
+            <span class="era-type-badge era-type-mini">Mini Álbum · Estreia</span>
+            <p class="era-desc">A estreia explosiva. O BTS chegou com uma sonoridade crua de hip-hop escolar, letras sobre rejeição e sonhos, e uma energia bruta que diferenciava o grupo de tudo que existia no K-pop na época.</p>
+            <div class="era-tracks">
+              <span class="era-track">Intro:2 Cool 4 Skool</span>
+              <span class="era-track">We Are Bulletproof Pt.2</span>
+              <span class="era-track">No More Dream</span>
+              <span class="era-track">Like</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- O!RUL8,2? -->
+      <div class="era-item reveal" data-type="mini" data-year="2013">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0d1a2a,#1e3a5f)">
+            <img class="era-cover-img" src="IMG/eras/O!RUL8,2.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag">Setembro 2013</div>
+            <div class="era-name">O!RUL8,2?</div>
+            <span class="era-type-badge era-type-mini">Mini Álbum</span>
+            <p class="era-desc">Segunda entrega ainda em 2013, com a pergunta: "Oh, are you late too?" — crítica ao sistema educacional sul-coreano e ao excesso de pressão sobre os jovens.</p>
+            <div class="era-tracks">
+              <span class="era-track">N.O</span>
+              <span class="era-track">We On</span>
+              <span class="era-track">If I Ruled the World</span>
+              <span class="era-track">Coffee</span>
+              <span class="era-track">Attack on Bangtan</span>
+              <span class="era-track">Paldogangsan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2014: Skool Luv Affair -->
+      <div class="era-item reveal" data-type="mini" data-year="2014">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#2a0a1a,#7c1d3f)">
+            <img class="era-cover-img" src="IMG/eras/skool-love-affair.jpg" alt="Capa do álbum" onerror="this.style.display='none'"></div>
+          <div class="era-body">
+            <div class="era-year-tag">Fevereiro 2014</div>
+            <div class="era-name">Skool Luv Affair</div>
+            <span class="era-type-badge era-type-mini">Mini Álbum</span>
+            <p class="era-desc">O amor entra na narrativa da escola. Mais suave e romântico, o projeto trouxe Boy In Luv e Suga's letras introspectivas — marcando uma transição de tom.</p>
+            <div class="era-tracks">
+              <span class="era-track">Boy In Luv</span>
+              <span class="era-track">Just One Day</span>
+              <span class="era-track">Tomorrow</span>
+              <span class="era-track">Spine Breaker</span>
+              <span class="era-track">Jump</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dark & Wild -->
+      <div class="era-item reveal" data-type="album" data-year="2014">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0a0a0a,#1a0533)">
+            <img class="era-cover-img" src="IMG/eras/dark&wild.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Agosto 2014</div>
+            <div class="era-name">Dark & Wild</div>
+            <span class="era-type-badge era-type-album">Álbum</span>
+            <p class="era-desc">Primeiro álbum de estúdio completo. Amor que vira raiva, obsessão e sombra — uma faceta mais madura e intensa, com arranjos mais pesados e letras complexas.</p>
+            <div class="era-tracks">
+              <span class="era-track">Danger</span>
+              <span class="era-track">War of Hormone</span>
+              <span class="era-track">Let Me Know</span>
+              <span class="era-track">Rain</span>
+              <span class="era-track">BTS Cypher Pt.3: Killer</span>
+              <span class="era-track">So 4 more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HYYH pt.1 -->
+      <div class="era-item reveal" data-type="mini" data-year="2015">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0a1f0a,#14532d)">
+            <img class="era-cover-img" src="IMG/eras/TMBMIL-1.png" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag">Abril 2015</div>
+            <div class="era-name">화양연화 Pt.1</div>
+            <span class="era-type-badge era-type-mini">Mini Álbum</span>
+            <p class="era-desc">O início da era mais icônica do grupo. "화양연화" significa "o momento mais bonito da vida" — juventude, liberdade e a dor de crescer. I Need U marcou o BTS para sempre.</p>
+            <div class="era-tracks">
+              <span class="era-track">I Need U</span>
+              <span class="era-track">Hold Me Tight</span>
+              <span class="era-track">Dope</span>
+              <span class="era-track">Boyz with Fun</span>
+              <span class="era-track">Converse High</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HYYH pt.2 -->
+      <div class="era-item reveal" data-type="mini" data-year="2015">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0f0520,#4c1d95)">
+            <img class="era-cover-img" src="IMG/eras/TMBMIL-2.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag">Novembro 2015</div>
+            <div class="era-name">화양연화 Pt.2</div>
+            <span class="era-type-badge era-type-mini">Mini Álbum</span>
+            <p class="era-desc">A continuação expandiu o universo narrativo do BTS (BU — BTS Universe). Run e Butterfly aprofundaram a estética visual e emocional que definia a era.</p>
+            <div class="era-tracks">
+              <span class="era-track">Run</span>
+              <span class="era-track">Butterfly</span>
+              <span class="era-track">Whalien 52</span>
+              <span class="era-track">Ma City</span>
+              <span class="era-track">Silver Spoon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- HYYH Young Forever -->
+      <div class="era-item reveal" data-type="album" data-year="2016">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0f0520,#4c1d95)">
+            <img class="era-cover-img" src="IMG/eras/TMBMIL-YF.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag">Maio 2016</div>
+            <div class="era-name">The Most Beautiful Moment in Life: Young Forever </div>
+            <span class="era-type-badge era-type-album">Álbum · Compilação</span>
+            <p class="era-desc">Young Forever concluiu e expandiu a narrativa iniciada em 화양연화. 
+              Os singles Epilogue: Young Forever, Fire e Save Me reforçaram os temas de juventude, amadurecimento, amizade e o desejo de eternizar os momentos mais belos da vida, 
+              consolidando a identidade emocional e narrativa dessa era.</p>
+            <div class="era-tracks">
+              <span class="era-track">Burning Up(Fire)</span>
+              <span class="era-track">Save Me</span>
+              <span class="era-track">Epilogue: Young Forever</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wings -->
+      <div class="era-item reveal" data-type="album" data-year="2016">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#080818,#1e1b4b)">
+            <img class="era-cover-img" src="IMG/eras/wings.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Outubro 2016</div>
+            <div class="era-name">Wings</div>
+            <span class="era-type-badge era-type-album">Álbum</span>
+            <p class="era-desc">Inspirado em "Demian" de Hermann Hesse. Cada membro ganhou um short film solo antes do lançamento — exploração da tentação, crescimento e a dualidade do bem e do mal. Breakthrough artístico total.</p>
+            <div class="era-tracks">
+              <span class="era-track">Intro: Boy Meets Evil</span>
+              <span class="era-track">Blood Sweat & Tears</span>
+              <span class="era-track">Cypher Pt.4</span>
+              <span class="era-track">21st Century Girl</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- You Never Walk Alone -->
+      <div class="era-item reveal" data-type="album" data-year="2017">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#080818,#1e1b4b)">
+            <img class="era-cover-img" src="IMG/eras/ynwa.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Fevereiro 2017</div>
+            <div class="era-name">You Never Walk Alone</div>
+            <span class="era-type-badge era-type-album">Álbum · Compilação</span>
+            <p class="era-desc">You Never Walk Alone ampliou a mensagem de WINGS, trazendo uma abordagem mais acolhedora e esperançosa. 
+              Os singles Spring Day e Not Today reforçaram os temas de superação, amizade, saudade e resistência, 
+              transmitindo a ideia de que ninguém precisa enfrentar as dificuldades sozinho.</p>
+            <div class="era-tracks">
+              <span class="era-track">Spring Day</span>
+              <span class="era-track">Not Today</span>
+              <span class="era-track">A Supplementary Story: You Never Walk Alone</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Love Yourself: Her -->
+      <div class="era-item reveal" data-type="mini" data-year="2017">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#1a0a05,#7c2d12)">
+            <img class="era-cover-img" src="IMG/eras/ly-her.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Setembro 2017</div>
+            <div class="era-name">Love Yourself: Her</div>
+            <span class="era-type-badge era-type-mini">Mini Álbum</span>
+            <p class="era-desc">Início da trilogia Love Yourself. DNA foi o primeiro MV do grupo a estrear no Top 10 do Billboard Hot 100. A era trouxe leveza, cores e um BTS em total ascensão global.</p>
+            <div class="era-tracks">
+              <span class="era-track">DNA</span>
+              <span class="era-track">Best of Me</span>
+              <span class="era-track">Pied Piper</span>
+              <span class="era-track">Mic Drop</span>
+              <span class="era-track">Go Go</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Love Yourself: Tear -->
+      <div class="era-item reveal" data-type="album" data-year="2018">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0a1520,#0c4a6e)">
+            <img class="era-cover-img" src="IMG/eras/ly-tear.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Maio 2018</div>
+            <div class="era-name">Love Yourself: Tear</div>
+            <span class="era-type-badge era-type-album">Álbum</span>
+            <p class="era-desc">Primeiro álbum a estrear em #1 no Billboard 200. Fake Love capturou a dor do amor que te faz perder a si mesmo. Uma das eras mais aplaudidas artisticamente.</p>
+            <div class="era-tracks">
+              <span class="era-track">Fake Love</span>
+              <span class="era-track">The Truth Untold</span>
+              <span class="era-track">Magic Shop</span>
+              <span class="era-track">Airplane pt.2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Love Yourself: Answer -->
+      <div class="era-item reveal" data-type="album" data-year="2018">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#1a0a00,#92400e)">
+            <img class="era-cover-img" src="IMG/eras/ly-answer.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Agosto 2018</div>
+            <div class="era-name">Love Yourself: Answer</div>
+            <span class="era-type-badge era-type-album">Álbum · Compilação</span>
+            <p class="era-desc">O fechamento da trilogia — a resposta é amar a si mesmo. IDOL celebrou a identidade coreana com referências a hanji, talchum e ritmos tradicionais. Discurso histórico na ONU com RM.</p>
+            <div class="era-tracks">
+              <span class="era-track">Euphoria</span>
+              <span class="era-track">Serendipity (Full)</span>
+              <span class="era-track">Epiphany</span>
+              <span class="era-track">I'm Fine</span>
+              <span class="era-track">IDOL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map of the Soul: Persona -->
+      <div class="era-item reveal" data-type="mini" data-year="2019">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0a1a0a,#166534)">
+            <img class="era-cover-img" src="IMG/eras/map-of-the-soul-persona.png" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Abril 2019</div>
+            <div class="era-name">Map of the Soul: Persona</div>
+            <span class="era-type-badge era-type-mini">Mini Álbum</span>
+            <p class="era-desc">Inspirado na psicologia de Carl Jung. A persona é a máscara que mostramos ao mundo — Boy With Luv com Halsey foi uma explosão de alegria que dominou charts globais.</p>
+            <div class="era-tracks">
+              <span class="era-track">Boy With Luv</span>
+              <span class="era-track">Make It Right</span>
+              <span class="era-track">HOME</span>
+              <span class="era-track">Jamais Vu</span>
+              <span class="era-track">Dionysus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map of the Soul: 7 -->
+      <div class="era-item reveal" data-type="album" data-year="2020">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0f0520,#6b21a8)">
+            <img class="era-cover-img" src="IMG/eras/map-of-the-soul.png" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag">Fevereiro 2020</div>
+            <div class="era-name">Map of the Soul: 7</div>
+            <span class="era-type-badge era-type-album">Álbum</span>
+            <p class="era-desc">7 anos, 7 membros, 7 sombras. ON e Black Swan exploraram as sombras junguianas — o lado escuro que cada um carrega. Considerado por muitos o pico criativo do grupo.</p>
+            <div class="era-tracks">
+              <span class="era-track">Black Swan</span>
+              <span class="era-track">Filter</span>
+              <span class="era-track">ON</span>
+              <span class="era-track">We are Bulletproof: the Eternal</span>
+              <span class="era-track">Outro: Ego</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BE -->
+      <div class="era-item reveal" data-type="album" data-year="2020">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#1a1a1a,#3f3f3f)">
+            <img class="era-cover-img" src="IMG/eras/BE.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">Novembro 2020</div>
+            <div class="era-name">BE</div>
+            <span class="era-type-badge era-type-album">Álbum · Pandemia</span>
+            <p class="era-desc">Criado inteiramente pelos membros durante a pandemia. Dynamite, o primeiro single 100% em inglês, foi lançado antes. BE é sobre consolo, presença e sobreviver ao isolamento juntos.</p>
+            <div class="era-tracks">
+              <span class="era-track">Life Goes On</span>
+              <span class="era-track">Telepathy</span>
+              <span class="era-track">Dis-ease</span>
+              <span class="era-track">Dynamite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Butter / PTD -->
+      <div class="era-item reveal" data-type="single" data-year="2021">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#1c1005,#78350f)">
+            <img class="era-cover-img" src="IMG/eras/btr-ptd.png" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">2021</div>
+            <div class="era-name">Butter / Permission to Dance</div>
+            <span class="era-type-badge era-type-single">Singles</span>
+            <p class="era-desc">Era pop/funk de verão que dominou o Billboard Hot 100 por semanas. Permission to Dance foi uma mensagem de esperança pós-pandemia — simples, radiante e universal.</p>
+            <div class="era-tracks">
+              <span class="era-track">Butter</span>
+              <span class="era-track">Permission to Dance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proof -->
+      <div class="era-item reveal" data-type="album" data-year="2022">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0a0a0f,#1e1b4b)">
+          <img class="era-cover-img" src="IMG/eras/Proof.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag">Junho 2022</div>
+            <div class="era-name">PROOF</div>
+            <span class="era-type-badge era-type-album">Álbum · Antologia</span>
+            <p class="era-desc">A antologia dos 9 anos — prova de tudo que construíram. Yet to Come declarou que o melhor ainda está por vir, antes do hiato para o serviço militar dos membros mais velhos.</p>
+            <div class="era-tracks">
+              <span class="era-track">Born Singer</span>
+              <span class="era-track">Yet to Come</span>
+              <span class="era-track">Run BTS</span>
+              <span class="era-track">For Youth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arirang 2026 -->
+      <div class="era-item reveal" data-type="album" data-year="2026">
+        <div class="era-dot" style="border-color:var(--red);box-shadow:0 0 10px rgba(206, 14, 14, 0.4)"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#0d1a2a,#1e3a5f)">
+            <img class="era-cover-img" src="IMG/eras/Arirang.webp" alt="Capa do álbum" onerror="this.style.display='none'">
+          </div>
+          <div class="era-body">
+            <div class="era-year-tag" style="color:var(--gold)">2026 · Comeback</div>
+            <div class="era-name">ARIRANG</div>
+            <span class="era-type-badge era-type-album">Álbum · Comeback</span>
+            <p class="era-desc">O retorno aguardado. Após o cumprimento do serviço militar pelos membros, o BTS reuniu o grupo completo com Arirang — um album em homenagem à canção folclórica coreana mais conhecida do mundo, ressignificada para uma nova era de maturidade e gratidão.</p>
+            <div class="era-tracks">
+              <span class="era-track">Body to Body</span>
+              <span class="era-track">Hooligan</span>
+              <span class="era-track">Aliens</span>
+              <span class="era-track">2.0</span>
+              <span class="era-track">Swim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Butter / PTD -->
+      <div class="era-item reveal" data-type="single" data-year="2026">
+        <div class="era-dot"></div>
+        <div class="era-card">
+          <div class="era-cover" style="background:linear-gradient(135deg,#1c1005,#78350f)">
+            <img class="era-cover-img" src="IMG/eras/come-over.jpg" alt="Capa do álbum" onerror="this.style.display='none'">
+            </div>
+          <div class="era-body">
+            <div class="era-year-tag">2026</div>
+            <div class="era-name">Come Over</div>
+            <span class="era-type-badge era-type-single">Single</span>
+            <p class="era-desc">Um presente para o Army no aniversário de 13 anos do BTS, a música Come Over, uma faixa secreta do vinil do álbum Arirang, vem para as plataformas digitais no dia 13/06.</p>
+            <div class="era-tracks">
+              <span class="era-track">Come Over</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /era-timeline -->
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand"><img src="IMG/nome-bts.png" width="60px" alt=""><img src="IMG/logo-bts.png" width="30px"></div>
+  <p style="font-size:clamp(0.6rem,1.2vw,0.72rem);color:var(--muted);letter-spacing:.18em;text-transform:uppercase">Bangtan Boys · 방탄소년단</p>
+  <p style="font-size:clamp(0.6rem,1.2vw,0.72rem);color:var(--muted);margin-top:.4rem">Feito por <strong style="color:var(--purple-l)">Sam Rodrigues</strong></p>
+  <p class="footer-note">Página de fã • Não afiliada à HYBE ou Big Hit Music</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

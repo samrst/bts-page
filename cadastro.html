@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="description" content="Cadastro de músicas do BTS - Bangtan Boys"/>
+  <meta name="theme-color" content="#0A0A0F"/>
+  <title>Cadastro — BTS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="IMG/icon-bts.png">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="navbar-brand"><img src="IMG/nome-bts.png" width="60px" alt=""><img src="IMG/logo-bts.png" width="30px"></a>
+    <button class="navbar-toggler d-md-none" id="nav-toggle">☰</button>
+    <ul class="nav-tabs-custom d-none d-md-flex" id="nav-desktop">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="eras.html" class="nav-link">Eras</a></li>
+      <li><a href="cadastro.html" class="nav-link active">Cadastro</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre Mim</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     PAGE: CADASTRO
+══════════════════════════════════════ -->
+<main id="page-cadastro" class="page" style="background:var(--bg2)">
+  <div class="container" style="padding-top:clamp(2rem,5vw,3rem); padding-bottom:clamp(2rem,5vw,3rem)">
+
+    <!-- FORM -->
+    <div class="reveal">
+      <p class="sec-label">Adicionar</p>
+      <h2 class="sec-title">Cadastrar Música</h2>
+      <div class="hairline"></div>
+    </div>
+
+    <div class="form-section reveal">
+      <div class="row g-2 g-md-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label">Título da Música *</label>
+          <input type="text" id="inp-titulo" class="form-control" placeholder="ex: Dynamite"/>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label">Álbum / EP</label>
+          <input type="text" id="inp-album" class="form-control" placeholder="ex: BE"/>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label">Membro Principal</label>
+          <select id="inp-membro" class="form-select">
+            <option value="">— Selecione —</option>
+            <option>RM</option><option>Jin</option><option>Suga</option>
+            <option>J-Hope</option><option>Jimin</option><option>V</option>
+            <option>Jungkook</option><option>Todos</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-3">
+          <label class="form-label">Ano</label>
+          <input type="number" id="inp-ano" class="form-control" placeholder="2024" min="2013" max="2030"/>
+        </div>
+        <div class="col-12 col-md-3">
+          <label class="form-label">Gênero</label>
+          <select id="inp-genero" class="form-select">
+            <option value="">— Selecione —</option>
+            <option>Pop</option><option>Hip-hop</option><option>R&B</option>
+            <option>Balada</option><option>EDM</option><option>Indie</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Observação</label>
+          <textarea id="inp-obs" class="form-control" rows="2" placeholder="Por que você ama essa música?"></textarea>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Imagem da Música <span style="color:var(--muted);font-size:.7rem">(opcional)</span></label>
+          <div class="img-upload-area" id="img-upload-area">
+            <input type="file" id="inp-imagem" accept="image/*"/>
+            <div class="img-upload-hint">📷 Clique para escolher uma capa ou foto</div>
+          </div>
+          <div class="img-preview-wrap" id="img-preview-wrap">
+            <img id="img-preview" src="" alt="preview"/>
+            <div>
+              <div style="font-size:.78rem;color:var(--white);margin-bottom:.3rem" id="img-preview-name"></div>
+              <button class="btn-rm-img" id="btn-rm-img" type="button">✕ Remover</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn-add" id="btn-cadastrar">＋ Cadastrar Música</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABELA COMPLETA -->
+    <div class="songs-section reveal" style="margin-top:clamp(2rem,5vw,3.5rem)">
+      <div class="songs-header">
+        <div>
+          <p class="sec-label" style="margin-bottom: 0.5rem;">Todas as Músicas</p>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-wrap" style="width: 100%;">
+          <span class="badge-count" id="badge-count">0 músicas</span>
+          <input type="text" class="search-input" id="search-input" placeholder="🔍 Buscar..."/>
+        </div>
+      </div>
+      <div class="songs-table-wrap">
+        <table class="songs-table">
+          <thead>
+            <tr>
+              <th style="width:clamp(40px,8vw,52px)"></th>
+              <th data-col="titulo">Título</th>
+              <th data-col="album">Álbum</th>
+              <th data-col="membro">Membro</th>
+              <th data-col="ano">Ano</th>
+              <th data-col="genero">Gênero</th>
+              <th>♡</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="songs-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand"><img src="IMG/nome-bts.png" width="60px" alt=""><img src="IMG/logo-bts.png" width="30px"></div>
+  <p style="font-size:clamp(0.6rem,1.2vw,0.72rem);color:var(--muted);letter-spacing:.18em;text-transform:uppercase">Bangtan Boys · 방탄소년단</p>
+  <p style="font-size:clamp(0.6rem,1.2vw,0.72rem);color:var(--muted);margin-top:.4rem">Feito por <strong style="color:var(--purple-l)">Sam Rodrigues</strong></p>
+  <p class="footer-note">Página de fã • Não afiliada à HYBE ou Big Hit Music</p>
+</footer>
+
+<!-- TOAST -->
+<div class="toast-bts" id="toast">✓ Música cadastrada!</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
