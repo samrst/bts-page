@@ -10,18 +10,18 @@ let searchQ = '';
 // NAV & MOBILE MENU
 // ════════════════════════════════
 const navToggle = document.getElementById('nav-toggle');
-const navMobile = document.getElementById('nav-mobile');
+const navMenu = document.getElementById('nav-desktop');
 
-if (navToggle && navMobile) {
+if (navToggle && navMenu) {
   navToggle.addEventListener('click', () => {
-    navMobile.classList.toggle('open');
+    navMenu.classList.toggle('open');
   });
 }
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
-  if (navMobile && navMobile.classList.contains('open') && !navMobile.contains(e.target) && e.target !== navToggle) {
-    navMobile.classList.remove('open');
+  if (navMenu && navMenu.classList.contains('open') && !navMenu.contains(e.target) && e.target !== navToggle) {
+    navMenu.classList.remove('open');
   }
 });
 
