@@ -129,6 +129,34 @@ nav .container {
   color: var(--white);
 }
 
+@media (max-width: 768px) {
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .nav-tabs-custom {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: var(--bg, #000);
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+  .nav-tabs-custom.show {
+    display: flex;
+  }
+
+  .nav-tabs-custom .nav-link {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
 /* ── PAGES ── */
 .page { 
   min-height: calc(100vh - 60px); 
