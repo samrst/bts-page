@@ -14,14 +14,14 @@ const navMenu = document.getElementById('nav-desktop');
 
 if (navToggle && navMenu) {
   navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
+    navMenu.classList.toggle('show');
   });
 }
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
-  if (navMenu && navMenu.classList.contains('open') && !navMenu.contains(e.target) && e.target !== navToggle) {
-    navMenu.classList.remove('open');
+  if (navMenu && navMenu.classList.contains('show') && !navMenu.contains(e.target) && e.target !== navToggle) {
+    navMenu.classList.remove('show');
   }
 });
 
