@@ -139,12 +139,13 @@ nav .container {
     display: none;
     flex-direction: column;
     width: 100%;
-    position: relative;
-    top: 70px;
+    position: absolute;
+    top: 100%;
     left: 0;
-    background: var(--bg, #000);
+    background: var(--bg);
     padding: 1rem 0;
     z-index: 999;
+    border-bottom: 1px solid var(--border);
   }
 
   .nav-tabs-custom.show {
@@ -1105,23 +1106,6 @@ footer {
 @media (max-width: 768px) {
   nav {
     padding: 0 0.75rem;
-  }
-  
-  .nav-collapse { 
-    display: none; 
-  }
-  
-  .nav-collapse.open { 
-    display: flex; 
-    flex-direction: column; 
-    background: rgba(10,10,15,.98); 
-    position: absolute; 
-    top: 100%; 
-    left: 0; 
-    right: 0; 
-    border-bottom: 1px solid var(--border); 
-    padding: .5rem 0; 
-    z-index: 100;
   }
   
   .form-section { 
